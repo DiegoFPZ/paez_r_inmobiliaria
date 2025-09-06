@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="es-CO">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Diego Páez">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contacta a Páez R Inmobiliaria para asesoría personalizada en compraventa de inmuebles en Medellín y Antioquia.">
+    <meta name="keywords" content="contacto inmobiliaria Medellín, asesoría inmobiliaria, venta de propiedades">
+    <meta property="og:title" content="Contacto - Páez R Inmobiliaria">
+    <meta property="og:description" content="Contáctanos para asesoría personalizada en compraventa de inmuebles. Seriedad, honorabilidad y cumplimiento.">
+    <meta property="og:image" content="assets/images/PaezR_logo.jpg">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome para iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" href="assets/images/general/favicon.ico" type="image/x-icon">
+    <title>Contacto - Páez R Inmobiliaria</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        /* Estilos específicos para la página de contacto */
+        .contact-hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('assets/images/general/medellin_nocturna.jpg') center/cover;
+            color: #ffffff;
+            padding: 80px 0;
+            text-align: center;
+        }
+        
+        .contact-info-card {
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s ease;
+            height: 100%;
+        }
+        
+        .contact-info-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .contact-icon {
+            font-size: 2rem;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+        
+        .contact-form {
+            background: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+            padding: 2rem;
+        }
+        
+        .form-control:focus {
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 0.25rem rgba(19, 171, 195, 0.25);
+        }
+        
+        .btn-contact {
+            background-color: var(--primary-color);
+            border-color: var(--primary-color);
+            padding: 0.75rem 2rem;
+            font-weight: 600;
+        }
+        
+        .btn-contact:hover {
+            background-color: #0f8e9f;
+            border-color: #0f8e9f;
+        }
+        
+        .map-container {
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+        }
+        
+        .whatsapp-float {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 30px;
+            right: 30px;
+            background-color: #25d366;
+            color: #ffffff;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+            z-index: 100;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background-color 0.3s;
+        }
+        
+        .whatsapp-float:hover {
+            background-color: #128c7e;
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <!-- Barra de navegación -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="assets/images/general/PaezR_logo.png" width="70" height="50" alt="Páez R Inmobiliaria" class="brand_logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto text-center text-lg-end">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="servicios.html">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="propiedades.html">Propiedades</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!-- Hero Section -->
+        <section class="contact-hero">
+            <div class="container">
+                <h1 class="display-4 fw-bold mb-3">Contáctenos</h1>
+                <p class="lead mb-4">¿Listo para vender o comprar de forma segura? Deje su mensaje o vía Whatsapp. Estamos aquí para responder sus preguntas y guiarle hacia la mejor decisión.</p>
+                <a href="#formulario" class="btn btn-light btn-lg px-4">Enviar mensaje</a>
+            </div>
+        </section>
+
+        <!-- Información de contacto -->
+        <section class="py-5">
+            <div class="container">
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="contact-info-card text-center p-4">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <h4>Ubicación</h4>
+                            <p>Medellín, Antioquia<br>Oficina principal en El Poblado</p>
+                            <a href="#mapa" class="btn btn-outline-primary btn-sm">Ver en mapa</a>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4 col-md-6">
+                        <div class="contact-info-card text-center p-4">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <h4>Teléfonos</h4>
+                            <p>+57 (604) 444 1234<br>+57 300 123 4567</p>
+                            <a href="tel:+573001234567" class="btn btn-outline-primary btn-sm">Llamar ahora</a>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4 col-md-6 mx-md-auto">
+                        <div class="contact-info-card text-center p-4">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <h4>Correo electrónico</h4>
+                            <p>info@paezrinmobiliaria.com<br>asesor@paezrinmobiliaria.com</p>
+                            <a href="mailto:info@paezrinmobiliaria.com" class="btn btn-outline-primary btn-sm">Enviar email</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Formulario de contacto y mapa -->
+        <section class="py-5 bg-light">
+            <div class="container">
+                <div class="row g-5">
+                    <!-- Formulario de contacto -->
+                    <div class="col-lg-7">
+                        <div class="contact-form" id="formulario">
+                            <h2 class="mb-4">Envíanos un mensaje</h2>
+                            <form id="contactForm">
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <label for="nombre" class="form-label">Nombre *</label>
+                                        <input type="text" class="form-control" id="nombre" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="email" class="form-label">Correo electrónico *</label>
+                                        <input type="email" class="form-control" id="email" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="telefono" class="form-label">Teléfono *</label>
+                                        <input type="tel" class="form-control" id="telefono" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="asunto" class="form-label">Asunto *</label>
+                                        <select class="form-select" id="asunto" required>
+                                            <option value="" selected disabled>Selecciona una opción</option>
+                                            <option value="compra">Quiero comprar una propiedad</option>
+                                            <option value="venta">Quiero vender una propiedad</option>
+                                            <option value="arriendo">Busco propiedad en arriendo</option>
+                                            <option value="avaluo">Solicitud de avalúo</option>
+                                            <option value="consulta">Consulta general</option>
+                                            <option value="otros">Otro asunto</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="mensaje" class="form-label">Mensaje *</label>
+                                        <textarea class="form-control" id="mensaje" rows="5" required></textarea>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="privacidad" required>
+                                            <label class="form-check-label" for="privacidad">
+                                                He leído y acepto la <a href="#" data-bs-toggle="modal" data-bs-target="#politicaPrivacidad">política de privacidad</a> *
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <button type="submit" class="btn btn-contact">Enviar mensaje</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    
+                    <!-- Mapa -->
+                    <div class="col-lg-5">
+                        <div class="sticky-top" style="top: 100px;">
+                            <h2 class="mb-4">Visítanos</h2>
+                            <div class="map-container mb-4" id="mapa">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63456.99937181242!2d-75.5836136!3d6.2443382!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e4428dfb80fad05%3A0x42137cfcc7b53b56!2sMedell%C3%ADn%2C%20Antioquia!5e0!3m2!1ses!2sco!4v1690834243195!5m2!1ses!2sco" 
+                                        width="100%" 
+                                        height="300" 
+                                        style="border:0;" 
+                                        allowfullscreen="" 
+                                        loading="lazy" 
+                                        referrerpolicy="no-referrer-when-downgrade">
+                                </iframe>
+                            </div>
+                            
+                            <div class="d-grid gap-2">
+                                <a href="https://wa.me/573001234567?text=Hola,%20me%20interesa%20recibir%20información%20sobre%20sus%20propiedades" 
+                                   class="btn btn-success" 
+                                   target="_blank">
+                                    <i class="fab fa-whatsapp me-2"></i> Contactar por WhatsApp
+                                </a>
+                                <a href="tel:+573001234567" class="btn btn-outline-primary">
+                                    <i class="fas fa-phone me-2"></i> Llamar ahora
+                                </a>
+                            </div>
+                            
+                            <div class="mt-4">
+                                <h5>Horario de atención</h5>
+                                <ul class="list-unstyled">
+                                    <li><strong>Lunes a Viernes:</strong> 8:00 AM - 6:00 PM</li>
+                                    <li><strong>Sábados:</strong> 9:00 AM - 2:00 PM</li>
+                                    <li><strong>Domingos:</strong> Cerrado</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Modal Política de Privacidad -->
+        <div class="modal fade" id="politicaPrivacidad" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Política de Privacidad</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>En Páez R Inmobiliaria respetamos su privacidad y nos comprometemos a proteger la información personal que nos comparta.</p>
+                        <h6>Recopilación de información</h6>
+                        <p>Recopilamos información que usted nos proporciona directamente cuando completa formularios de contacto, solicita información sobre propiedades o se comunica con nosotros.</p>
+                        <h6>Uso de la información</h6>
+                        <p>Utilizamos su información para: responder a sus consultas, proporcionarle los servicios solicitados, mejorar nuestros servicios y comunicarnos con usted sobre propiedades y servicios que puedan ser de su interés.</p>
+                        <h6>Protección de datos</h6>
+                        <p>Implementamos medidas de seguridad para proteger su información personal contra accesos no autorizados, alteración, divulgación o destrucción.</p>
+                        <h6>Derechos del usuario</h6>
+                        <p>Usted tiene derecho a acceder, rectificar o eliminar sus datos personales en cualquier momento. Para ejercer estos derechos, puede contactarnos a través de los canales proporcionados.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Entendido</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- WhatsApp Float Button -->
+        <a href="https://wa.me/573001234567?text=Hola,%20me%20interesa%20recibir%20información%20sobre%20sus%20propiedades" 
+           class="whatsapp-float" 
+           target="_blank">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </main>
+
+    <!-- Footer -->
+    <footer class="py-5 bg-dark text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5>Páez R Inmobiliaria</h5>
+                    <p>Seriedad, honorabilidad y cumplimiento en cada transacción.</p>
+                </div>
+                
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5>Contacto</h5>
+                    <p><i class="fas fa-map-marker-alt me-2"></i> Medellín, Antioquia</p>
+                    <p><i class="fas fa-phone me-2"></i> (604) 444 1234</p>
+                    <p><i class="fas fa-envelope me-2"></i> info@paezrinmobiliaria.com</p>
+                </div>
+                
+                <div class="col-md-4">
+                    <h5>Síguenos</h5>
+                    <div class="d-flex gap-3 mt-3">
+                        <a href="#" class="text-white"><i class="fab fa-facebook-f fa-lg"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-instagram fa-lg"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-linkedin-in fa-lg"></i></a>
+                        <a href="https://wa.me/573001234567" class="text-white"><i class="fab fa-whatsapp fa-lg"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <hr class="my-4">
+            
+            <div class="text-center">
+                <p class="mb-0">© 2025 Paez R Inmobiliaria. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- JavaScript para el formulario de contacto -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const contactForm = document.getElementById('contactForm');
+            
+            if (contactForm) {
+                contactForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    
+                    // Aquí puedes agregar la lógica para enviar el formulario
+                    // Por ejemplo, usando EmailJS, Fetch API a un backend, etc.
+                    
+                    // Simulación de envío exitoso
+                    alert('¡Gracias por tu mensaje! Nos pondremos en contacto contigo pronto.');
+                    contactForm.reset();
+                });
+            }
+        });
+    </script>
+</body>
+</html>

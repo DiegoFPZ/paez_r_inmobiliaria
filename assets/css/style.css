@@ -1,0 +1,309 @@
+/* =======================
+   RESET
+======================= */
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+img {
+  max-width: 100%;
+  display: block;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+ul {
+  list-style: none;
+}
+
+/* =======================
+   VARIABLES Y FUENTE GLOBAL
+======================= */
+:root {
+  --primary-color: #13abc3;      /* Turquesa oficial */
+  --secondary-color: #1a456e;    /* Gris azulado */
+  --accent-color: #ffe066;       /* Amarillo pastel */
+  --success-color: #7ad35f;      /* Verde éxito */
+  --background-light: #f8f9fa;   /* Fondo claro */
+  --text-main: #212529;          /* Gris oscuro casi negro */
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--text-main);
+  background-color: var(--background-light);
+  font-size: 0.8rem;
+}
+
+h1 { font-size: 2rem; }
+h2 { font-size: 1.5rem; }
+h3 { font-size: 1.17rem; }
+h4 { font-size: 0.8rem; }
+h5 { font-size: 0.85rem; }
+h6 { font-size: 0.75rem; }
+
+/* =======================
+   HERO SECTION
+======================= */
+.hero-section {
+  background: 
+    linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)),
+    url('/assets/images/general/medellin_atardecer.jpg') no-repeat center center;
+  background-size: cover;
+  min-height: 70vh;
+  position: relative;
+  color: var(--text-main);
+  text-shadow: 0 2px 8px rgba(255, 209, 59, 0.3);
+}
+
+.hero-section h1 {
+  color: #ffffff;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8);
+}
+
+/* =======================
+   PROPIEDADES
+======================= */
+.property-card img {
+  height: 300px;
+  object-fit: cover;
+}
+.property-card,
+.property-card .card-body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.property-card {
+  transition: box-shadow 0.3s, transform 0.3s;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+.property-card:hover {
+  box-shadow: 0 8px 24px rgba(19,171,195,0.18);
+  transform: translateY(-1px) scale(1.03);
+  z-index: 1;
+}
+
+.property-card .card-body {
+  padding: 0.7rem; /* Reducir padding interno */
+  flex: 1; /* Permitir que crezca para llenar el espacio */
+}
+
+/* REDUCCIÓN DEL ESPACIO - Añade estas reglas */
+.property-card .card-body {
+  padding: 1rem; /* Asegura un padding consistente */
+}
+
+.property-card .card-body .fw-bold {
+  margin-bottom: 0.5rem; /* Reduce espacio debajo del precio */
+}
+
+.property-card .card-body details {
+  margin-top: 0.5rem; /* Reduce el espacio superior del details */
+}
+
+.property-card .card-body details summary {
+  margin-bottom: 0; /* Elimina margen inferior del summary */
+  padding: 0.4rem 0; /* Ajusta el padding para mejor apariencia */
+  color: var(--primary-color); /* Usa el color primario de tu tema */
+  font-weight: 500;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.property-card .card-body details summary:hover {
+  color: var(--secondary-color); /* Color al hacer hover */
+}
+
+.property-card .card-body details[open] summary {
+  margin-bottom: 0.5rem; /* Espacio cuando está abierto */
+}
+
+.property-card .card-body details ul {
+  margin-bottom: 0; /* Elimina margen inferior de la lista */
+  padding-left: 1.2rem; /* Padding consistente para la lista */
+}
+
+/* =======================
+   BOTONES Y BADGES
+======================= */
+.btn-primary,
+a.btn-primary,
+button.btn-primary {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  color: #fff;
+}
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: #1199b0;
+  border-color: #1199b0;
+}
+
+.btn-secondary,
+a.btn-secondary,
+button.btn-secondary,
+.badge.bg-secondary {
+  background-color: var(--accent-color);
+  border-color: var(--accent-color);
+  color: var(--text-main);
+}
+.btn-secondary:hover,
+.btn-secondary:focus {
+  background-color: #e6d82f;
+  border-color: #e6d82f;
+}
+
+.btn-success,
+a.btn-success,
+button.btn-success,
+.badge.bg-success,
+.alert-success {
+  background-color: var(--success-color);
+  border-color: var(--success-color);
+  color: var(--text-main);
+}
+.btn-success:hover,
+.btn-success:focus {
+  background-color: #6bc052;
+  border-color: #6bc052;
+}
+
+.btn-outline-primary,
+a.btn-outline-primary,
+button.btn-outline-primary {
+  color: var(--primary-color);
+  border-color: var(--primary-color);
+  background-color: transparent;
+}
+.btn-outline-primary:hover,
+.btn-outline-primary:focus {
+  background-color: var(--primary-color);
+  color: #fff;
+  border-color: var(--primary-color);
+}
+
+.badge.bg-primary {
+  background-color: var(--primary-color) !important;
+  color: #fff;
+}
+.badge.bg-secondary {
+  background-color: var(--accent-color) !important;
+  color: #fff;
+}
+
+/* =======================
+   SERVICIOS
+======================= */
+.service-card {
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+  border: none;
+}
+.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+.service-icon {
+  font-size: 2.5rem;
+  color: var(--primary-color);
+  margin-bottom: 20px;
+  transition: color 0.2s;
+}
+.service-card:hover .service-icon,
+.service-card:hover .service-icon i {
+  color: var(--accent-color) !important;
+}
+
+/* =======================
+   BENEFICIOS
+======================= */
+.benefit-item {
+  margin-bottom: 15px;
+  padding-left: 30px;
+  position: relative;
+}
+.benefit-item i {
+  position: absolute;
+  left: 0;
+  top: 2px;
+  color: var(--primary-color);
+}
+
+/* =======================
+   CTA SECTION
+======================= */
+.cta-section {
+  background-color: var(--secondary-color);
+  color: white;
+  padding: 80px 0;
+}
+
+/* =======================
+   WHATSAPP FLOAT
+======================= */
+.whatsapp-float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 40px;
+  background-color: #25d366;
+  color: white;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s;
+}
+.whatsapp-float:hover {
+  background-color: #128c7e;
+  color: white;
+}
+
+/* =======================
+   NAVBAR Y FOOTER
+======================= */
+.navbar {
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .nav-link.active {
+  color: #212529 !important;      /* Más oscuro */
+  font-weight: bold;
+  background-color: var(--accent-color);
+  border-radius: 0.25rem;
+}
+
+footer {
+  background-color: #1a1a1a;
+}
+
+/* =======================
+   UTILIDADES Y EFECTOS
+======================= */
+.text-center.p-4.border.rounded.h-100:hover i.text-secondary {
+  color: var(--accent-color) !important;
+  transition: color 0.2s;
+  cursor: default;
+}
+#servicios .text-center.p-4.border.rounded.h-100, 
+#servicios .text-center.p-4.border.rounded.h-100 * {
+  transition: color 0.2s;
+  cursor: default;
+}
+
+/* =======================
+   TEXTO PRINCIPAL
+======================= */
+body, .text-body, .text-dark {
+  color: var(--text-main) !important;
+}
