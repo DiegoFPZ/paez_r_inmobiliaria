@@ -170,7 +170,7 @@ if (galleryModal) {
         // Actualizar el botón de WhatsApp
         const whatsappBtn = document.getElementById('whatsappBtn');
         const phone = '573005720011';
-        const msg = encodeURIComponent(`Hola, estoy interesado en la propiedad código ${property.ref || ''}: ${property.title}`);
+        const msg = encodeURIComponent(`Hola, me interesa la propiedad código ${property.ref || ''}: ${property.title}`);
         whatsappBtn.href = `https://wa.me/${phone}?text=${msg}`;
         
         // Construir el carrusel de medios
