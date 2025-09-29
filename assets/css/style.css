@@ -224,6 +224,20 @@ button.btn-outline-primary {
   color: var(--accent-color) !important;
 }
 
+.col-lg-6 img {
+    border: 2px solid #ddd;
+    max-width: 60%;
+    margin-left: 100px;
+}
+
+@media (max-width: 991px) {
+    .col-lg-6 img {
+        display: block;
+        margin: 0 auto; /* Centra horizontalmente */
+        max-width: 70%; /* Reduce tamaño en móvil */
+    }
+}
+
 /* =======================
    BENEFICIOS
 ======================= */
