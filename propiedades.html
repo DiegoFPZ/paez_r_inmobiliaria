@@ -1,25 +1,33 @@
 <!DOCTYPE html>
 <html lang="es-CO">
+
 <head>
     <meta charset="UTF-8">
     <meta name="author" content="Diego Páez">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Encuentre casas y apartamentos en Medellín disponibles para la venta. Páez R Inmobiliaria le ofrece opciones seguras y confiables.">
-    <meta name="keywords" content="inmobiliaria Medellín, venta de casas, compra de apartamentos, Antioquia, asesoría inmobiliaria">
+    <meta name="description"
+        content="Casas, apartamentos y lotes en venta en Medellín. Páez R Inmobiliaria ofrece asesoría profesional para comprar o vender propiedades en Antioquia.">
     <meta property="og:title" content="Su aliada inmobiliaria de propiedades | Páez R Inmobiliaria">
-    <meta property="og:description" content="Conozca las propiedades de Páez R Inmobiliaria: venta de apartamento venta de casa o lote en Medellín.">
-    <meta property="og:image" content="assets/images/PaezR_logo.jpg">
+    <meta property="og:site_name" content="Páez R Inmobiliaria">
+    <meta property="og:locale" content="es_CO">
+    <meta property="og:description"
+        content="Conozca las propiedades de Páez R Inmobiliaria: venta de apartamento venta de casa o lote en Medellín.">
+    <meta property="og:image" content="https://www.paezrinmobiliaria.com/assets/images/general/PaezR_logo.jpg">
     <meta property="og:url" content="https://www.paezrinmobiliaria.com/propiedades.html">
     <meta property="og:type" content="website">
 
     <!-- Schema -->
-     <script type="application/ld+json">
+    <script type="application/ld+json">
         {
         "@context": "https://schema.org",
-        "@type": "Organization",
+        "@type": "RealEstateAgent",
         "name": "Páez R Inmobiliaria",
         "url": "https://www.paezrinmobiliaria.com",
         "logo": "https://www.paezrinmobiliaria.com/assets/images/general/PaezR_logo.jpg",
+        "areaServed": {
+         "@type": "City",
+         "name": "Medellín"
+        },
         "sameAs": [
             "https://web.facebook.com/marketplace/profile/100005273826669",
             "https://www.instagram.com/paezrinmobiliaria"
@@ -28,21 +36,21 @@
     </script>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    
+
     <!-- Font Awesome para iconos -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="icon" href="assets/images/general/favicon.ico" type="image/x-icon">
-    <title>Propiedades en Medellín | Casas y apartamentos en venta</title>
+    <title>Propiedades a la venta en Medellín | Páez R Inmobiliaria</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-17537938419"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17537938419"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-  gtag('config', 'AW-17537938419');
-</script>
+        gtag('config', 'AW-17537938419');
+    </script>
     <style>
         /* Estilos para la galería */
         .property-img-container {
@@ -51,47 +59,57 @@
             height: 300px;
             cursor: pointer;
         }
+
         .property-img {
             width: 100%;
             height: 100%;
             object-fit: cover;
             transition: transform 0.5s ease;
         }
+
         .property-img-container:hover .property-img {
             transform: scale(1.05);
         }
+
         .gallery-indicator {
             position: absolute;
             bottom: 10px;
             right: 10px;
-            background: rgba(0,0,0,0.7);
+            background: rgba(0, 0, 0, 0.7);
             color: white;
             padding: 5px 10px;
             border-radius: 20px;
             font-size: 0.8rem;
         }
+
         .modal-content {
             border-radius: 10px;
             overflow: hidden;
             border: none;
         }
-        .carousel-control-prev, .carousel-control-next {
+
+        .carousel-control-prev,
+        .carousel-control-next {
             width: 50px;
             height: 50px;
-            background: rgba(0,0,0,0.5);
+            background: rgba(0, 0, 0, 0.5);
             border-radius: 50%;
             top: 50%;
             transform: translateY(-50%);
         }
+
         .carousel-control-prev {
             left: 15px;
         }
+
         .carousel-control-next {
             right: 15px;
         }
+
         .carousel-indicators {
             margin-bottom: 0;
         }
+
         .carousel-indicators button {
             width: 10px;
             height: 10px;
@@ -100,13 +118,15 @@
         }
     </style>
 </head>
+
 <body>
     <header>
         <!-- Barra de navegación -->
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container">
                 <a class="navbar-brand" href="index.html">
-                    <img src="assets/images/general/PaezR_logo.png" width="70" height="50" alt="Páez R Inmobiliaria" class="brand_logo">
+                    <img src="assets/images/general/PaezR_logo.png" width="70" height="50" alt="Páez R Inmobiliaria"
+                        class="brand_logo">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                     <span class="navbar-toggler-icon"></span>
@@ -134,18 +154,25 @@
         <section id="propiedades" class="py-5 bg-light">
             <div class="container">
                 <h1 class="text-center mb-5">Casas y apartamentos en venta en Medellín</h1>
+                <p class="text-center mb-5">
+                    Explore nuestra selección de apartamentos, casas y lotes en venta en Medellín
+                    y Antioquia. Encuentre propiedades en sectores como Laureles, Prado Centro,
+                    San Antonio de Prado y Santa Elena.
+                </p>
                 <div class="row g-4">
                     <!-- Propiedad 1-->
                     <div class="col-lg-3 col-md-4 col-sm-6 col-12">
                         <div class="card property-card h-100">
-                            <div class="property-img-container" data-bs-toggle="modal" data-bs-target="#galleryModal" data-property-id="1">
-                                <img src="assets/images/propiedades/apto-reserva-del-seminario/apto-reserva-del-seminario-main.jpg" class="property-img" alt="apto en reserva del seminario">
+                            <div class="property-img-container" data-bs-toggle="modal" data-bs-target="#galleryModal"
+                                data-property-id="1">
+                                <img src="assets/images/propiedades/apto-reserva-del-seminario/apto-reserva-del-seminario-main.jpg"
+                                    class="property-img" alt="apto en reserva del seminario">
                                 <div class="gallery-indicator">
                                     <i class="fas fa-images me-1"></i> 3 fotos / 1 video
                                 </div>
                             </div>
                             <div class="card-body">
-                                <h5 class="card-title">Apartamento en Reserva del Seminario</h5>
+                                <h5 class="card-title">Apartamento en Reserva del Seminario, Medellín</h5>
                                 <p class="card-text">✨ Piso 15 con excelente vista <br> ✨ Unidad residencial</p>
                                 <span class="badge bg-primary">Apartamento</span>
                                 <p class="mt-2 fw-bold">$ 280'000.000 COP</p>
@@ -164,19 +191,22 @@
                             </div>
                         </div>
                     </div>
-                    
+
                     <!-- Propiedad 2-->
                     <div class="col-lg-3 col-md-4 col-sm-6 col-12">
                         <div class="card property-card h-100">
-                            <div class="property-img-container" data-bs-toggle="modal" data-bs-target="#galleryModal" data-property-id="2">
-                                <img src="assets/images/propiedades/apto-laureles-nogal/apto-laureles-nogal-main.jpg" class="property-img" alt="Casa en Villa del Sol">
+                            <div class="property-img-container" data-bs-toggle="modal" data-bs-target="#galleryModal"
+                                data-property-id="2">
+                                <img src="assets/images/propiedades/apto-laureles-nogal/apto-laureles-nogal-main.jpg"
+                                    class="property-img" alt="Casa en Villa del Sol">
                                 <div class="gallery-indicator">
                                     <i class="fas fa-images me-1"></i> 2 fotos
                                 </div>
                             </div>
                             <div class="card-body">
-                                <h5 class="card-title">Apartamento en Laureles, Nogal</h5>
-                                <p class="card-text">✨ Una excelente oportunidad en uno de los mejores sectores de Medellín</p>
+                                <h5 class="card-title">Apartamento en Laureles, Medellín</h5>
+                                <p class="card-text">✨ Una excelente oportunidad en uno de los mejores sectores de
+                                    Medellín</p>
                                 <span class="badge bg-primary">Apartamento</span>
                                 <p class="mt-2 fw-bold">$ 490'000.000 COP</p>
                                 <details>
@@ -192,18 +222,20 @@
                             </div>
                         </div>
                     </div>
-            
+
                     <!-- Propiedad 3-->
                     <div class="col-lg-3 col-md-4 col-sm-6 col-12">
                         <div class="card property-card h-100">
-                            <div class="property-img-container" data-bs-toggle="modal" data-bs-target="#galleryModal" data-property-id="3">
-                                <img src="assets/images/propiedades/casa-prado-centro/casa-prado-centro-main.jpg" class="property-img" alt="Casa en Prado Centro">
+                            <div class="property-img-container" data-bs-toggle="modal" data-bs-target="#galleryModal"
+                                data-property-id="3">
+                                <img src="assets/images/propiedades/casa-prado-centro/casa-prado-centro-main.jpg"
+                                    class="property-img" alt="Casa en Prado Centro">
                                 <div class="gallery-indicator">
                                     <i class="fas fa-images me-1"></i> 3 fotos
                                 </div>
                             </div>
                             <div class="card-body">
-                                <h5 class="card-title">Casa en Prado Centro</h5>
+                                <h5 class="card-title">Casa en Prado Centro, Medellín</h5>
                                 <p class="card-text">✨ Casa amplia de dos plantas y garaje en Prado Centro</p>
                                 <span class="badge bg-secondary">Casa</span>
                                 <p class="mt-2 fw-bold">$ 950'000.000 COP</p>
@@ -224,8 +256,10 @@
                     <!-- Propiedad 4-->
                     <div class="col-lg-3 col-md-4 col-sm-6 col-12">
                         <div class="card property-card h-100">
-                            <div class="property-img-container" data-bs-toggle="modal" data-bs-target="#galleryModal" data-property-id="4">
-                                <img src="assets/images/propiedades/lote-santa-elena/lote-santa-elena-main.jpg" class="property-img" alt="Casa en Prado Centro">
+                            <div class="property-img-container" data-bs-toggle="modal" data-bs-target="#galleryModal"
+                                data-property-id="4">
+                                <img src="assets/images/propiedades/lote-santa-elena/lote-santa-elena-main.jpg"
+                                    class="property-img" alt="Casa en Prado Centro">
                                 <div class="gallery-indicator">
                                     <i class="fas fa-images me-1"></i> 3 fotos
                                 </div>
@@ -247,12 +281,14 @@
                             </div>
                         </div>
                     </div>
-                    
+
                     <!-- Propiedad 5-->
                     <div class="col-lg-3 col-md-4 col-sm-6 col-12">
                         <div class="card property-card h-100">
-                            <div class="property-img-container" data-bs-toggle="modal" data-bs-target="#galleryModal" data-property-id="5">
-                                <img src="assets/images/propiedades/casa-san-antonio-de-prado/casa-san-antonio-de-prado-main.jpg" class="property-img" alt="Casa en San Antonio de Prado">
+                            <div class="property-img-container" data-bs-toggle="modal" data-bs-target="#galleryModal"
+                                data-property-id="5">
+                                <img src="assets/images/propiedades/casa-san-antonio-de-prado/casa-san-antonio-de-prado-main.jpg"
+                                    class="property-img" alt="Casa en San Antonio de Prado">
                                 <div class="gallery-indicator">
                                     <i class="fas fa-images me-1"></i> 3 fotos
                                 </div>
@@ -279,15 +315,18 @@
                     <!-- Propiedad 6-->
                     <div class="col-lg-3 col-md-4 col-sm-6 col-12">
                         <div class="card property-card h-100">
-                            <div class="property-img-container" data-bs-toggle="modal" data-bs-target="#galleryModal" data-property-id="6">
-                                <img src="assets/images/propiedades/apartamento-terrazas-del-sol/apartamento-terrazas-del-sol-main.jpg" class="property-img" alt="Apartamento en Terrazas del Sol">
+                            <div class="property-img-container" data-bs-toggle="modal" data-bs-target="#galleryModal"
+                                data-property-id="6">
+                                <img src="assets/images/propiedades/apartamento-terrazas-del-sol/apartamento-terrazas-del-sol-main.jpg"
+                                    class="property-img" alt="Apartamento en Terrazas del Sol">
                                 <div class="gallery-indicator">
                                     <i class="fas fa-images me-1"></i> 4 fotos
                                 </div>
                             </div>
                             <div class="card-body">
                                 <h5 class="card-title">Apartamento en Terrazas del Sol, Sopetrán</h5>
-                                <p class="card-text">✨ Aparta-sol en condominio con piscinas, turco y cancha de fútbol.</p>
+                                <p class="card-text">✨ Aparta-sol en condominio con piscinas, turco y cancha de fútbol.
+                                </p>
                                 <span class="badge bg-primary">Apartamento</span>
                                 <p class="mt-2 fw-bold">$ 265'000.000 COP</p>
                                 <details>
@@ -309,7 +348,7 @@
             </div>
         </section>
 
-                <!-- Modal para Galería (versión actualizada) -->
+        <!-- Modal para Galería (versión actualizada) -->
         <div class="modal fade" id="galleryModal" tabindex="-1" aria-hidden="true">
             <div class="modal-dialog modal-lg modal-dialog-centered">
                 <div class="modal-content">
@@ -322,11 +361,13 @@
                             <div class="carousel-inner">
                                 <!-- Las imágenes y videos se cargarán dinámicamente con JavaScript -->
                             </div>
-                            <button class="carousel-control-prev" type="button" data-bs-target="#propertyCarousel" data-bs-slide="prev">
+                            <button class="carousel-control-prev" type="button" data-bs-target="#propertyCarousel"
+                                data-bs-slide="prev">
                                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                 <span class="visually-hidden">Anterior</span>
                             </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#propertyCarousel" data-bs-slide="next">
+                            <button class="carousel-control-next" type="button" data-bs-target="#propertyCarousel"
+                                data-bs-slide="next">
                                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                 <span class="visually-hidden">Siguiente</span>
                             </button>
@@ -335,11 +376,11 @@
                             <h5 id="propertyTitle"></h5>
                             <p id="propertyDescription" class="text-muted"></p>
                             <div class="d-flex align-items-center mt-3 gap-2">
-                                    <span class="badge bg-secondary">Ref: <span id="propertyRef"></span></span>
-                                    <a id="whatsappBtn" href="#" target="_blank" class="btn btn-success ms-auto">
+                                <span class="badge bg-secondary">Ref: <span id="propertyRef"></span></span>
+                                <a id="whatsappBtn" href="#" target="_blank" class="btn btn-success ms-auto">
                                     <i class="fab fa-whatsapp me-1"></i> Consultar por WhatsApp
-                                    </a>
-                                </div>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -353,10 +394,14 @@
         <div class="container">
             <p class="mb-0">© 2025 Paez R Inmobiliaria. Todos los derechos reservados.</p>
             <div class="mt-2">
-                <a href="https://web.facebook.com/marketplace/profile/100005273826669/" target="_blank" class="text-white mx-2"><i class="fab fa-facebook-f"></i></a>
-                <a href="https://www.instagram.com/paezrinmobiliaria/" target="_blank" class="text-white mx-2"><i class="fab fa-instagram"></i></a>
-                <a href="https://wa.me/573005720011" target="_blank" class="text-white mx-2"><i class="fab fa-whatsapp"></i></a>
-                <a href="https://www.linkedin.com/in/diego-paezz/" target="_blank" class="text-white mx-2"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://web.facebook.com/marketplace/profile/100005273826669/" target="_blank"
+                    class="text-white mx-2"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/paezrinmobiliaria/" target="_blank" class="text-white mx-2"><i
+                        class="fab fa-instagram"></i></a>
+                <a href="https://wa.me/573005720011" target="_blank" class="text-white mx-2"><i
+                        class="fab fa-whatsapp"></i></a>
+                <a href="https://www.linkedin.com/in/diego-paezz/" target="_blank" class="text-white mx-2"><i
+                        class="fab fa-linkedin-in"></i></a>
             </div>
         </div>
     </footer>
@@ -365,6 +410,5 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/main.js"></script>
 </body>
+
 </html>
-
-
